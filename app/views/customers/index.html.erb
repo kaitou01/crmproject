@@ -1,0 +1,10 @@
+<h1>Customers</h1>
+
+<div class="customers">
+  <%= render partial: 'customer', collection: @customers %>
+</div>
+
+<div class="links">
+  <%= link_to 'Missing Email', missing_email_path %>
+  <%= link_to 'Alphabetized', alphabetized_path %>
+</div>
