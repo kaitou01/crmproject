@@ -1,6 +1,13 @@
 <div class="customer">
   <h2><%= customer.full_name %></h2>
   <p><%= image_tag customer.image %></p>
+  <p><strong>Province:</strong>
+    <% if customer.province == nil %>
+      None
+    <% else %>
+      <%= customer.province.name %>
+    <% end %>
+  </p>
   <p><%= customer.phone_number %></p>
   <p><%= customer.email_address %></p>
   <p><%= customer.notes %></p>
